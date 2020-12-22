@@ -11,7 +11,7 @@ class Config(object):
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'final-project-dbserver-saul-rivas.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'final-project-db-saul-rivas'
-    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'ENTER_SQL_SERVER_USERNAME'
+    SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'ad'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'ENTER_SQL_SERVER_PASSWORD'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE  + '?driver=ODBC+Driver+17+for+SQL+Server'
